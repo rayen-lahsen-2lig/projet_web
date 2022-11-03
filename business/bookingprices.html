@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> booking prices</title>
+  <link rel = "icon" href ="assets/pictures/2.png" 
+          type = "image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+.container .content {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0); /* Fallback color */
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: #f1f1f1;
+  width: 100%;
+  padding: 20px;
+}
+
+p{
+    font-size: 1rem;
+  color:gray;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  }
+
+body {
+  font-family: Arial;
+  font-size: 17px;
+}
+
+.container {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container img {vertical-align: middle;}
+
+
+html {
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 10px;
+}
+/*The @media rule is used in media queries to apply different styles for different media types/devices.*/
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+
+}
+
+.container {
+  padding: 0 16px;
+}
+
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.btn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;}
+  .main{
+    width: 100%;
+    height: 100vh;
+  }
+  .menu{
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    background-color: #023047;
+  }
+  .main h2{
+    font-family: arial;
+    font-size: 40px;
+    color: #219ebc;
+  
+  }
+  .main ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .main ul li a{
+  color:#219ebc;
+  font-family:arial;
+  list-style: none;
+  margin-right: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  
+  }
+  ul li a:hover{
+    color:#fb8500 ;
+  }
+  .btn {
+    width: auto;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    color: #30d300;
+  }
+  .btn:hover{
+    background-color: #30d300;
+    color:white;
+  }
+</style>
+</head>
+<body>
+  <div class="main">
+		<div class="menu">
+			<h3>LOST AND SEEN</h3>
+      <ul>
+        <li><a href="../home 2/home_main.html">HOME</a></li>
+				<li><a href="../lost and seen/make a donation.html">DONATION</a></li>
+        <li><a href="../business/business-main.html">BUSINESS</a></li>
+				<li><a href="../adoption/adoptionmain.html">ADOPTION</a></li>
+				<li><a href="../lost and seen/lost and found pets.html">EVENTS</a></li>
+				<li><a href="../contact/contact-test.html">CONTACT</a></li>
+			</ul>
+			<button class="btn">(+216)92 889 773</button>
+			
+		</div>
+<div class="container">
+    <img src="./assets/pictures/dogwalkingbg.jpg" alt="Notebook" style="width:100%;">
+    <div class="content">
+      <h1>sitting and dog walking</h1>
+      <p>check our prices to make a decison!!!</p>
+    </div>
+  </div>
+
+<h2>Our Plans</h2>
+<div class="row">
+  <div class="column">
+    <div class="card">
+      <img src="./assets/pictures/pic1.jpg" width="300px" height= "300px">
+      <div class="container">
+    <p>3x week, M-F 3% savings 30-Minute Visit DT303/month or DT25.22/walk 45-Minute Visit DT372/month or DT31.04/walk 60-Minute Visit DT454/month or DT37.83/walk</p>
+        <p><button class="button">BASIC PLAN</button></p>
+      </div>
+    </div>
+  </div>
+  <div class="column">
+    <div class="card">
+      <img src="./assets/pictures/pic2.jpg"  width="300px" height= "300px">
+      <div class="container">
+        <p>Daily, M-F  5% savings  30-Minute Visit DT395/month or DT24.70/walk 45-Minute Visit DT486/month or DT30.40/walk 60-Minute Visit DT593/month or DT37.05/walk</p>
+
+        <p><button class="button">PREMIER PLAN</button></p>
+      </div>
+    </div>
+  </div>
+  
+  <div class="column">
+    <div class="card">
+      <img src="./assets/pictures/pic3.jpg"  width="300px" height= "300px">
+      <div class="container">
+        <p>Daily, M-F 10% savings 30-Minute Visit DT491/month or DT23.40/walk 45-Minute Visit $605/month or DT28.80/walk 60-Minute Visit DT737/month or DT35.10/walk Two Puppy/Senior 20-Minute visits/day DT794/month or DT18.90/walk</p>
+        <p><button class="button">VIP PLAN</button></p>
+      </div>
+    </div>
+  </div>
+</div>
+<p><a class="btn btn-secondary" href="booking.html">Book a Reservation&raquo;</a></p>
+<p><a class="btn btn-secondary" href="hire me2.html">Hire Me&raquo;</a></p>
+
+
+</body>
+</html>

@@ -1,0 +1,43 @@
+
+*{ margin:0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    width:100%;
+    min-height: 100vh;
+}
+
+h1{ text-align: center;
+    text-decoration: underline;
+font-size: xx-large;
+font-style: italic;
+font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: pink  ;}
+img{ 
+    width:500px;
+    height:auto;
+    margin:50px;
+    border:6px double pink  ;
+}
+p{
+    text-align: center;
+    text-transform:capitalize;
+    line-height: 2.8;
+	font-family:Arial, Helvetica, sans-serif;
+	font-weight: bold;
+    font-size:x-large;
+	color: #000;
+	border:pink solid 3px ;
+	line-height: 50px;
+}
+.btn{
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 18px 60px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;}

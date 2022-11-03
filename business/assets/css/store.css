@@ -1,0 +1,146 @@
+p{
+    font-size: 1.5rem;
+  color: red;
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 1.6;
+  letter-spacing: 1px;
+  }
+  h2{
+    
+    font-size: 1.5fr;
+    color: red;
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+  }
+  <style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+/* Full-width input fields */
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.btn{
+  background-color: #4CAF50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;}
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  .main{
+    width: 100%;
+    height: 100vh;
+  }
+  .menu{
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    background-color: #023047;
+  }
+  .main h2{
+    font-family: arial;
+    font-size: 40px;
+    color: #219ebc;
+  
+  }
+  .main ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .main ul li a{
+  color:#219ebc;
+  font-family:arial;
+  list-style: none;
+  margin-right: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  
+  }
+  ul li a:hover{
+    color:#fb8500 ;
+  }
+  .btn {
+    width: auto;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    color: #30d300;
+  }
+  .btn:hover{
+    background-color: #30d300;
+    color:white;
+  }  

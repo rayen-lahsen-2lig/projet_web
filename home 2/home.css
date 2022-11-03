@@ -1,0 +1,136 @@
+*{
+	padding: 0;
+	margin: 0;
+
+}
+/*Background*/
+.main{
+width: 100%;
+height: 100vh;
+background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(background.jpg);
+background-size: cover;
+
+}
+/*Menu*/
+.menu{
+	width: 1350px;
+	height: 80px;
+	margin-left: 35px;
+	margin-right: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 25px;
+	background-color: #023047;
+}
+/*Titre*/
+.main h2{
+	font-family: arial;
+	font-size: 40px;
+	color: #219ebc;
+
+}
+/*La liste de menu*/
+.main ul {
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	list-style-type: none;
+
+}
+/*Les eléments de la liste*/
+.main ul li a{
+color:#219ebc;
+font-family:arial;
+list-style: none;
+margin-right: 50px;
+font-weight: bold;
+cursor: pointer;
+text-decoration: none;
+
+}
+
+
+ul li a:hover{
+	color:#fb8500 ;
+}
+/*Bouton numero de télephone*/
+.btn {
+	width: auto;
+	height: 50px;
+	border-radius: 40px;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	background-color:white;
+	color: #50C878;
+}
+.btn:hover{
+	background-color: #50C878;
+	color:white;
+}
+/*Le contenue*/
+.content
+{
+	width: 1200px;
+	height: 100vh;
+	
+	margin: auto;
+}
+/*Titre de paragraphe*/
+.content h1{
+	font-family: arial;
+	font-weight: bold;
+	color:#ffb703;
+	font-size: 50px;
+	padding-top: 100px; 
+}
+/*Paragraphe*/
+.content p {
+	font-family: arial;
+	font-weight: bold;
+	color: white;
+	font-size: #000;
+	line-height: 50px;
+	padding-top: 30px;
+}
+/*Titre de l'album*/
+.content h2{
+	font-family: arial;
+	font-weight: bold;
+	color:#ffb703;
+	font-size: 50px;
+	padding-top: 100px; 
+}
+/*L'album*/
+.album {
+  margin: 50px;
+  border: 1px solid #ccc;
+  float: left;
+  width: 180px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.album:hover {
+  border: 1px solid #777;
+}
+
+.album img {
+  width: 100%;
+  height: auto;
+}
+
+html,body {
+	width: 100%;
+	height: 100%;
+	margin: 0;	
+}
+.background {
+	width: 100%;
+height: 20vh;
+background-color: #023047;
+background-size: cover;
+
+}
