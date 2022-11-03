@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> booking</title>
+  <link rel = "icon" href ="assets/pictures/2.png" 
+          type = "image/x-icon">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-img {
+  /* The image used */
+  background-image: url("./assets/pictures/cat.jpg");
+  min-height: 700px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Add styles to the form container */
+.container {
+  position: absolute;
+  right: 0;
+  margin: 20px;
+  max-width: 300px;
+  padding: 16px;
+  background-color: white;
+}
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=email], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=tel], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* Set a style for the submit button */
+.btn {
+  background-color: #04AA6D;
+  color: white;
+  padding: 16px 20px;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+}
+
+.btn:hover {
+  opacity: 1;
+}
+.text-block {
+  position: absolute;
+  top: 100px;
+  left: 20px;
+  width: 30%;
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+  }
+  .menu{
+    width: 100%;
+    height: 80px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 25px;
+    background-color: #023047;
+  }
+  .main h2{
+    font-family: arial;
+    font-size: 40px;
+    color: #219ebc;
+  
+  }
+  .main ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .main ul li a{
+  color:#219ebc;
+  font-family:arial;
+  list-style: none;
+  margin-right: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  
+  }
+  ul li a:hover{
+    color:#fb8500 ;
+  }
+  .btn {
+    width: auto;
+    height: 50px;
+    border-radius: 40px;
+    font-size: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color:white;
+    color: #30d300;
+  }
+  .btn:hover{
+    background-color: #30d300;
+    color:white;
+  }  
+</style>
+<script>
+  function actionCall(){
+    alert('we will contact you soon');
+  }
+</script>
+</head>
+<body>
+  <div class="main">
+		<div class="menu">
+			<h3>LOST AND SEEN</h3>
+      <ul>
+        <li><a href="../home 2/home_main.html">HOME</a></li>
+				<li><a href="../lost and seen/make a donation.html">DONATION</a></li>
+        <li><a href="../business/business-main.html">BUSINESS</a></li>
+				<li><a href="../adoption/adoptionmain.html">ADOPTION</a></li>
+				<li><a href="../lost and seen/lost and found pets.html">EVENTS</a></li>
+				<li><a href="../contact/contact-test.html">CONTACT</a></li>
+			</ul>
+			<button class="btn">(+216)92 889 773</button>
+			
+		</div>
+<div class="bg-img">
+  <form action="/action_page.php" class="container">
+    <div>
+        <form action="/action_page.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
+      
+          <label for="lname">Last Name</label>
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required>
+          <label for="mail">Email</label>
+          <input type="email" id="mail" name="mail" placeholder="Your Email.." required>
+          <label for="phone">Phone number</label>
+          <input type="tel" id="phone" name="phone" placeholder="Your Number.." required>
+          <label for="gender">Gender</label>
+          <div>
+            <input type="radio" id="m" name="male" value="male">
+            <label for="male">Male</label>
+          </div>
+          <div>
+            <input type="radio" id="f" name="female" value="female">
+            <label for="female">Female</label>
+          </div>
+          <label for="work">what do you need ?</label>
+          <select id="work" name="work">
+            <option value="sitter">Sitter</option>
+            <option value="dogw">Dogwalker</option>
+          </select>
+          <label for="country">Country</label>
+          <select id="country" name="country">
+            <option value="australia">Australia</option>
+            <option value="canada">Canada</option>
+            <option value="usa">USA</option>
+            <option value="tunisia">Tunisia</option>    
+          </select>
+          <label for="plan">Choose a Plan</label>
+          <select id="plan" name="plan">
+            <option value="basic">BASIC PLAN</option>
+            <option value="canada">PREMIER PLAN</option>
+            <option value="usa">VIP PLAN</option> 
+          </select>
+        
+          <input type="submit" value="Submit" onclick="actionCall()">
+        </form>
+      </div>
+</div>
+    <div class="text-block">
+        <h2 style="color:black">That's it. Once these steps are completed, you can begin booking dog walking and pet sitting services </h2>
+    </div>
+</body>
+<footer class="containt_footer" >
+  <p>© 2022 created with love</p>
+</footer>
+</html>

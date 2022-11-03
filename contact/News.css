@@ -1,0 +1,163 @@
+
+.img1{
+    width: 150px;
+    height: 150px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 10px; 
+    padding-top: 20px;
+}
+h1{
+    text-align:center ;
+    text-decoration: underline;
+    text-decoration-color:black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: red ;
+    
+
+}
+body 
+{
+	font-family: sans-serif;
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(to top, rgba(0,0,0,0.5)50%, rgba(0,0,0,0.5)50%), url(dogs.jpg);
+        background-size: cover;
+        
+        
+        }
+
+
+.contact-box
+{
+	width: 500px;
+	background-color: #ffff;
+	box-shadow: 0 0 20px 0 #999;
+	top : 50%;
+	transform: translate(-50%;-50%);
+	position: relative ;
+	border: 3px solid pink;
+    margin: 100px;
+    display: block;
+    margin: 0 auto;
+    padding-left: 10px; 
+    padding-top: 20px;
+}
+form
+{
+	margin: 35px;
+}
+.input-field
+{
+	width: 400px;
+	height: 40px;
+	margin-top: 20px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border: 1px solid #777;
+	border-radius: 14px;
+	outline: none;
+}
+.textarea-field
+{
+	height: 150px;
+	padding-top: 10px;
+}
+.btnContact
+{
+	border-radius: 20px;
+	color: #ffff;
+	margin-top: 18px;
+	padding: 10px;
+	background-color: #87ceeb;
+	font-size: 12px;
+	border: none;
+	cursor: pointer;
+}
+p{
+    position: relative ;
+    right: 200px;
+    left: 200px; 
+    color:black;
+}
+.contact ul  {
+	justify-content: center;
+	align-items: center;
+    font-weight: bold ;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative ;
+    text-decoration: none ;
+    right: 200px;
+    left: 200px; 
+
+}
+.contact ul  a{
+    color:#219ebc;
+    font-family:arial;
+    list-style: none;
+    margin-right: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    justify-content: center;
+	align-items: center;
+    font-weight: bold ;
+    display: inline-block;
+    border-radius: 5px;
+    position: relative ;
+    text-decoration: none ;
+    right: 200px;
+    left: 200px; 
+    
+}
+.menu{
+	width: 100%;
+	height: 80px;
+	margin: auto;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0px 25px;
+	background-color: #023047;
+}
+.main h2{
+	font-family: arial;
+	font-size: 40px;
+	color: #219ebc;
+
+}
+.main ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+
+}
+
+.main ul li a{
+color:#219ebc;
+font-family:arial;
+list-style: none;
+margin-right: 50px;
+font-weight: bold;
+cursor: pointer;
+
+}
+
+
+ul li a:hover{
+	color:#fb8500 ;
+}
+.btn {
+	width: auto;
+	height: 50px;
+	border-radius: 40px;
+	font-size: 20px;
+	justify-content: center;
+	align-items: center;
+	background-color:white;
+	color: #30d300;
+}
+.btn:hover{
+	background-color: #30d300;
+	color:white;
+}
