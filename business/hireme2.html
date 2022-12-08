@@ -2,9 +2,10 @@
 <html>
 <head>
   <title> hire me</title>
-  <link rel = "icon" href ="./assets/pictures/2.png" 
+  <link rel = "icon" href ="assets/pictures/2.png" 
           type = "image/x-icon">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="./assets/js/formulaire.js"></script>
 <style>
 body, html {
   height: 100%;
@@ -156,11 +157,7 @@ input[type=submit]:hover {
     color:white;
   }  
 </style>
-<script>
-  function actionCall(){
-    alert('we will contact you soon');
-  }
-</script>
+
 </head>
 <body>
   <div class="main">
@@ -180,23 +177,24 @@ input[type=submit]:hover {
 <div class="bg-img">
 
     <div>
-        <form action="connect.php/connect.php" method="post">
+        <!--<form action="connect/connect.php" method="post" class="container" name="F">-->
+          <form class="container" name="F" >
           <label for="firstname">First Name</label>
-          <input type="text" id="firstname" name="firstname" placeholder="Your name.." required >
+          <input type="text" id="fname" name="firstname" placeholder="Your name.." required >
       
           <label for="lastname">Last Name</label>
-          <input type="text" id="lastname" name="lastname" placeholder="Your last name.." required >
+          <input type="text" id="lname" name="lastname" placeholder="Your last name.." required >
           <label for="mail">Email</label>
           <input type="email" id="mail" name="mail" placeholder="Your Email.." required>
           <label for="phone">Phone number</label>
-          <input type="tel" id="phone" name="phone" placeholder="Your Number.."required>
+          <input type="tel" id="tel" name="phone" placeholder="Your Number.."required>
           <label for="gender">Gender</label>
           <div>
-            <input type="radio" id="m" name="male" value="m">
+            <input type="radio" id="m" name="gender" value="m">
             <label for="male">Male</label>
           </div>
           <div>
-            <input type="radio" id="f" name="female" value="f">
+            <input type="radio" id="f" name="gender" value="f">
             <label for="female">Female</label>
           </div>
           <label for="work">Are you ?</label>
@@ -212,7 +210,11 @@ input[type=submit]:hover {
             <option value="tunisia">Tunisia</option>    
           </select>
         
-          <input type="submit" value="Submit">
+     <input type="submit" value="Submit" onclick="verification()">
+     <a href="http://localhost/projetwebb/business/table.php">
+      <input type="button" class="btn" value="Submit" >
+     </a>
+    
         </form>
       </div>
 </div>

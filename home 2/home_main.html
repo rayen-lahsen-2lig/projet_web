@@ -5,73 +5,59 @@
 	<title>Lost And Seen</title>
 	<link rel = "icon" href ="../pages/assets/pictures/2.png" 
 	type = "image/x-icon">
-	<link rel="stylesheet" type="text/css" href="home.css">
-	<script type="text/javascript" src="homee.js"></script>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+	<script type="text/javascript" src="rec.js"></script>
 </head>
 <body>
-	<div class="main">
+     <div class="main">
+
 		<div class="menu">
+
 			<!--Titre-->
+
 
 			<h2>LOST AND SEEN</h2>
 			<!--Liste-->
 			<ul>
-				<li><a href="../home/home_main.html">HOME</a></li>
+				        <li><a href="../home 2/home_main.html">HOME</a></li>
 						<li><a href="../lost and seen/make a donation.html">DONATION</a></li>
-						<li><a href="../business/business-main.html">BUSINESS</a></li>
+						<li><a href="../pages/business-main.html">BUSINESS</a></li>
 						<li><a href="../adoption/adoptionmain.html">ADOPTION</a></li>
 						<li><a href="../lost and seen/lost and found pets.html">EVENTS</a></li>
 						<li><a href="../contact/contact-test.html">CONTACT</a></li>
+						<li><a href="rec.html">RECLAMATION</a></li>
 					</ul>
 					<!--Bouton numero de télephone-->
 			<button class="btn">(+216)92 889 773</button>
+
+		</div>
+		<div class="content"> 
+			<form id="form" name="form" action="reclamer.php" method="POST" onsubmit="return validation(argu)">
+		<h4>Your name:</h4>	 <br>
+			<input id="n"type="text" name="name"></br>
+			<h4>Your mobile:</h4> <br>
+			<input id="m" type="text" name="mobile"></br>
+			<h4>Your Email:</h4> <br>
+		<input id="e" type="email" id="email" name="email" >
+		</br>
+		<h4>Subject:</h4><br>
+		<textarea id="c" name="comment" rows="15" cols="50"></textarea>
+	</br>
+	<button class="bouton" type="submit" name="valider" onclick="return v();" >Envoyer</button>
+    </form>
+    <br> 
+    <button class="bouton2" type="submit" name="valider" ><a href="afficher.php">DATA</a></button>
+
+		</div>
+		
 			
-		</div>
-		<div class="content">
-			<!--Titre de paragraph-->
-			<h1>ADOPTING MEANS YOU SAVE A LIFE!</h1>
-			<!--Paragraph-->
-			<p>Too often, shelters euthanize animals due to room constraints, but if more people adopted pets instead of buying them, the number of pets euthanized would lower dramatically.
+			
 
-When you adopt, not only do you save your loving new companion, but you make space for other animals who desperately need it, creating a domino effect of goodness.</p>
-              <!--Titre pour l'album-->
-              <h2>YOU WILL NEVER FEEL ALONE AGAIN</h2>
-                <!--Album-->
-              	<div class="album">
-  <a  href="p1.jpg">
-    <img src="p1.jpg" alt="dog photo" width="600" height="400">
-  </a>
-  
-</div>
 
-<div class="album">
-  <a  href="p4.jpg">
-    <img src="p4.jpg" alt="cat" width="600" height="400">
-  </a>
-  
-</div>
 
-<div class="album">
-  <a  href="p3.jpg">
-    <img src="p3.jpg" alt="dog photo" width="600" height="400">
-  </a>
- 
-</div>
-<div class="album">
-  <a  href="p2.jpg">
-    <img src="p2.jpg" alt="dog photo" width="600" height="400">
-  </a>
- 
-</div>
-              
-
-		</div>
-	
-
-	</div>
-
+		
+    </div>
 </body>
-</html>
 <footer>
 	<div class="background">
 	</div>

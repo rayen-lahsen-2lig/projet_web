@@ -115,7 +115,8 @@ form{
       <h2 class="h22">Artistique Sterling Silver Crystal Cat Penda</h2>
       <p style="font-size:160%;">55.40DT</p>
 
-  <form action="/action_page.php">
+      <form action="./connect/order.php" method="post">
+        <input type="hidden" name="productName" value="Artistique Sterling Silver Crystal Cat Penda">
   <label for="qte">Qte</label>
   <select name="qte" id="qte">
   <option value="1">1</option>
@@ -124,10 +125,17 @@ form{
   <option value="4">4</option>
   <option value="5">5</option>
 </select>
+<label for="s">Size</label>
+<select name="size" id="s">
+<option value="S">S</option>
+<option value="M">M</option>
+</select>
+<input type="submit" class="btnshop">
+
 </form>
 <br>
 <br>
-<p><a class="btnshop" href="#" onclick="actionCall()">Buy &raquo;</a></p>
+
 </div>
 </div>
 </body>

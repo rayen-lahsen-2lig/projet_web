@@ -178,9 +178,8 @@ input[type=submit]:hover {
 			
 		</div>
 <div class="bg-img">
-  <form action="/action_page.php" class="container">
     <div>
-        <form action="/action_page.php">
+        <form action="connect/connect2.php" method="post" class="container" name="F">
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name.." required>
       
@@ -189,14 +188,14 @@ input[type=submit]:hover {
           <label for="mail">Email</label>
           <input type="email" id="mail" name="mail" placeholder="Your Email.." required>
           <label for="phone">Phone number</label>
-          <input type="tel" id="phone" name="phone" placeholder="Your Number.." required>
+          <input type="tel" id="tel" name="phone" placeholder="Your Number.." required>
           <label for="gender">Gender</label>
           <div>
-            <input type="radio" id="m" name="male" value="male">
+            <input type="radio" id="m" name="gender" value="m">
             <label for="male">Male</label>
           </div>
           <div>
-            <input type="radio" id="f" name="female" value="female">
+            <input type="radio" id="f" name="gender" value="f">
             <label for="female">Female</label>
           </div>
           <label for="work">what do you need ?</label>

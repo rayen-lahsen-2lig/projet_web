@@ -115,29 +115,30 @@ form{
       <h2 class="h22">National Rescue Dog Day, Dog Lovers Women Men Kids T-Shirt</h2>
       <p style="font-size:160%;">23.40DT</p>
 
-  <form action="/action_page.php">
-  <label for="qte">Qte</label>
-  <select name="qte" id="qte">
-  <option value="1">1</option>
-  <option value="2">2</option>
-  <option value="3">3</option>
-  <option value="4">4</option>
-  <option value="5">5</option>
-</select>
+      <form action="./connect/order.php" method="post">
+        <input type="hidden" name="productName" value="National Rescue Dog Day, Dog Lovers Women Men Kids T-Shir">
+        <label for="qte">Qte</label>
+        <select name="qte" id="qte">
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+      </select>
+      <br>
+      <br>
+      <label for="s">Size</label>
+      <select name="size" id="s">
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+      <option value="XXL">XXL</option>
+      </select>
+      <input type="submit" class="btnshop">
+    </form>
 <br>
 <br>
-<label for="s">Size</label>
-<select name="s" id="s">
-<option value="1">S</option>
-<option value="2">M</option>
-<option value="3">L</option>
-<option value="4">XL</option>
-<option value="5">XXL</option>
-</select>
-</form>
-<br>
-<br>
-<p><a class="btnshop" href="#" onclick="actionCall()">Buy &raquo;</a></p>
 </div>
 </div>
 </body>

@@ -3,39 +3,39 @@
 <html lang="en">
 <head>
 <title>Contact And News - Lost And Seen </title>
-<link rel = "icon" href ="../business/assets/pictures/2.png" 
+<link rel = "icon" href ="../pages/assets/pictures/2.png" 
 	type = "image/x-icon">
 <link rel="stylesheet" href="contact.css">
-<script src="contact.js"></script>
+<script lang="javascript" src="cont.js"></script>
 </head>
 <body>
+    <div class="hero-image"></div>
     <div class="main">
 		<div class="menu">
 			<h3>LOST AND SEEN</h3>
 			<ul>
-        <li><a href="../home 2/home_main.html">HOME</a></li>
-        <li><a href="../lost and seen/make a donation.html">DONATION</a></li>
-        <li><a href="../business/business-main.html">BUSINESS</a></li>
-        <li><a href="../adoption/adoptionmain.html">ADOPTION</a></li>
-        <li><a href="../lost and seen/lost and found pets.html">EVENTS</a></li>
-        <li><a href="../contact/contact-test.html">CONTACT</a></li>
+				<li><a href="../home/home_main.html">HOME</a></li>
+						<li><a href="#">ABOUT</a></li>
+						<li><a href="../pages/business-main.html">BUSINESS</a></li>
+						<li><a href="../adoption/adoptionmain.html">ADOPTION</a></li>
+						<li><a href="../lost and seen/lost and found pets.html">EVENTS</a></li>
+						<li><a href="../contact/contact-test.html">CONTACT</a></li>
 					</ul>
 			<button class="btn">(+216)92 889 773</button>		
-		</div>
+        </div>
 <div class="bg-img">
-  <form action="/action_page.php" class="container">
+  <form id="form1" name="formulaire" method= "POST" action="form.php" class="container">
     <div>
-        <form action="/action_page.php">
           <label for="fname">First Name</label>
           <input type="text" id="fname" name="firstname" placeholder="Your name..">
-      
           <label for="lname">Last Name</label>
           <input type="text" id="lname" name="lastname" placeholder="Your last name..">
           <label for="mail">Email</label>
-          <input type="email" id="mail" name="mail" placeholder="Your Email..">
-          <textarea type="text" class="input-field textarea-field" placeholder="Message" ></textarea>
-          <input type="submit" value="Envoyer" onclick="actionCall()">
-        </form>
+          <input type="email" id="email" name="email" placeholder="Your Email..">
+          <textarea type="text" id="msg" name="msg" class="input-field textarea-field" placeholder="Message" ></textarea>
+          <input type="submit" value="Envoyer" onclick="return verif ();" onclick="return actioncall();">
+       
+        <button> <a href="aff.php"> Affichage</a> </button>
       </div>
       <img src="log.png" class="img1">
 <h1> We'd love to hear from you! </h1>
@@ -52,10 +52,10 @@
      
 </body>
 <footer>
-    
+    <div class="contact">
        <center><h3> Don't forget to check our socials where you can find pictures of animals before and after adoption and all our news and events </h3></center>
         <br>
-<center>       <button class="btn1"> <a href="mailto:lostandseen01@gmail.com"> GMAIL</a></li></button></center>
+<center>       <button class="btn1" > <a href="mailto:lostandseen01@gmail.com"> GMAIL</a></li></button></center>
 <br>
 <br>
    <center> <button class="btn1" ><a href="https://www.instagram.com/lost.and.seen/"> INSTAGRAM</a></li></button></center>

@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title> hire me</title>
-  <link rel = "icon" href ="./assets/pictures/2.png" 
+  <title> booking</title>
+  <link rel = "icon" href ="assets/pictures/2.png" 
           type = "image/x-icon">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body, html {
   height: 100%;
@@ -17,7 +17,7 @@ body, html {
 
 .bg-img {
   /* The image used */
-  background-image: url("./assets/pictures/man-dog.jpg");
+  background-image: url("walking\ dog.jpg");
   min-height: 700px;
 
   /* Center and scale the image nicely */
@@ -155,21 +155,67 @@ input[type=submit]:hover {
     background-color: #30d300;
     color:white;
   }  
+  
 </style>
-<script>
-  function actionCall(){
-    alert('we will contact you soon');
+
+<script language="javascript">
+  function verif(){
+    //verification du champ prenom//
+    if(o.f.value=="")
+    {alert("champ prénom est obligatoire");
+  return false; }
+  else if (o.f.value.length<3){
+  alert("Le prénom est invalide ");
+  return false ;}
+
+  //verification du champ nom//
+  else if (o.l.value==""){
+  alert("champ nom est obligatoire");
+  return false ;}
+  else if (o.l.value.length>10){
+  alert("Le nom est invalide doit être inférieur à 10 ");
+  return false ;}
+
+//verification du champ animal//
+
+  else if (o.p.value==""){
+  alert("Le nom de l'animal est obligatoire");
+  return false ;}
+
+
+  //verification du champ email
+  else if (o.m.value==""){
+  alert("L'adresse mail est obligatoire");
+  return false ;
+}else if ((o.m.value.indexOf ('@')==-1)||(o.m.value.indexOf ('.')==-1))
+{
+alert("Vérifier que votre adresse mail est correcte");}
+
+
+//verification du champ télephone
+else if(o.t.value=="")
+    {alert("veuillez saisir votre numéro de télephone");
+  return false; }
+  else if (o.t.value.length!=8){
+  alert("Tappez un numéro de télephone valide");
+  return false ;}
+//champ adresse //
+  else if(o.a.value=="")
+    {alert("Merci de saisir votre adresse");
+  return false; }
   }
+ 
+
 </script>
 </head>
 <body>
   <div class="main">
 		<div class="menu">
 			<h3>LOST AND SEEN</h3>
-			<ul>
-        <li><a href="../home 2/home_main.html">HOME</a></li>
-        <li><a href="../lost and seen/make a donation.html">DONATION</a></li>
-				<li><a href="../business/business-main.html">BUSINESS</a></li>
+      <ul>
+        <li><a href="../home/home_main.html">HOME</a></li>
+				<li><a href="../lost and seen/make a donation.html">DONATION</a></li>
+        <li><a href="../pages/business-main.html">BUSINESS</a></li>
 				<li><a href="../adoption/adoptionmain.html">ADOPTION</a></li>
 				<li><a href="../lost and seen/lost and found pets.html">EVENTS</a></li>
 				<li><a href="../contact/contact-test.html">CONTACT</a></li>
@@ -178,47 +224,32 @@ input[type=submit]:hover {
 			
 		</div>
 <div class="bg-img">
-
+  <form id="adoption" name="o" method="POST" action="adoption.php" class="container">
     <div>
-        <form action="connect.php/connect.php" method="post">
-          <label for="firstname">First Name</label>
-          <input type="text" id="firstname" name="firstname" placeholder="Your name.." required >
-      
-          <label for="lastname">Last Name</label>
-          <input type="text" id="lastname" name="lastname" placeholder="Your last name.." required >
+        <form action="adoption.php">
+          <label for="fname">First Name</label>
+          <input type="text" id="f" name="f" placeholder="Your name.." >
+      <label for="lname">Last Name</label>
+          <input type="text" id="l" name="l" placeholder="Your last name.." >
+          <label for="lname"> Pet's Name</label>
+          <input type="text" id="p" name="p" placeholder=" pets name..">
           <label for="mail">Email</label>
-          <input type="email" id="mail" name="mail" placeholder="Your Email.." required>
+          <input type="email" id="m" name="email" placeholder="Your Email.." >
           <label for="phone">Phone number</label>
-          <input type="tel" id="phone" name="phone" placeholder="Your Number.."required>
-          <label for="gender">Gender</label>
-          <div>
-            <input type="radio" id="m" name="male" value="m">
-            <label for="male">Male</label>
-          </div>
-          <div>
-            <input type="radio" id="f" name="female" value="f">
-            <label for="female">Female</label>
-          </div>
-          <label for="work">Are you ?</label>
-          <select id="work" name="work">
-            <option value="sitter">Sitter</option>
-            <option value="dogw">Dogwalker</option>
-          </select>
-          <label for="country">Country</label>
-          <select id="country" name="country">
-            <option value="australia">Australia</option>
-            <option value="canada">Canada</option>
-            <option value="usa">USA</option>
-            <option value="tunisia">Tunisia</option>    
-          </select>
+          <input type="tel" id="t" name="tel" placeholder="Your Number..">
+          <label for="a">Adress</label>
+          <input type="text" id="a" name="ad" placeholder="Your Adress..">
+          <input type="submit" value="Envoyer" onclick="return verif();">
+         </form>
+         <a href="affichage.php">Affichage</a>
+         
         
-          <input type="submit" value="Submit">
-        </form>
       </div>
-</div>
+      </div>
+     
     <div class="text-block">
-        <h3>Hey there! Need a Job ?</h3>
-        <h4>with lost and seen we offer you a job and you can help us too by only 20% of your income that goes to the animals in the street</h4>
+        <h2 style="color:black">Thank you for saving an animal life</h2>
     </div>
+    
 </body>
 </html>
